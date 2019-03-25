@@ -6,7 +6,7 @@ from sklearn.decomposition import PCA
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, precision_score, recall_score, f1_score
 
-input = pd.read_csv("C:\\Users\\txr5070\\Desktop\\CS6375\\project\\all\\train.csv", delimiter=',')
+input = pd.read_csv("train.csv", delimiter=',')
 X = input.iloc[:, 1:].values.reshape(len(input.index), len(input.columns)-1)
 y = input.iloc[:, 0].values.reshape(len(input.index))
 
